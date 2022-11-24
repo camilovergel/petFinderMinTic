@@ -81,10 +81,19 @@ export default class EmpleadosCrear extends React.Component {
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasic">
               <Form.Label>Raza</Form.Label>
-              <Form.Control
-                onChange={(e) => this.setValue("apellido_p", e.target.value)}
-              />
+              <Form.Control                
+                onChange={(e) => this.setValue("apellido_p", e.target.value)} />
+              
+              {/* <Form.Select aria-label="Default select example">
+                <option>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </Form.Select> */}
+
             </Form.Group>
+          
+            
             <Form.Group className="mb-3" controlId="formBasic">
               <Form.Label>Sexo</Form.Label>
               <Form.Control
@@ -99,7 +108,8 @@ export default class EmpleadosCrear extends React.Component {
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Fecha de Perdida</Form.Label>
-              <Form.Control
+              <Form.Control 
+                type="date"
                 onChange={(e) => this.setValue("mail", e.target.value)}
               />
             </Form.Group>

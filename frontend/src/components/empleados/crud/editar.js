@@ -151,6 +151,7 @@ export default class EmpleadosEditar extends React.Component {
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Fecha de perdida</Form.Label>
               <Form.Control
+              type="date"
               value = {this.state.empleado.mail}
                 onChange={(e) => this.setValue("mail", e.target.value)}
               />

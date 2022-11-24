@@ -11,9 +11,15 @@ export default class Menu extends React.Component {
   }
   render() {
     return (
-      <Navbar fixed="top" id="navbar" bg="primary" expand="lg" variant="dark">
+      <Navbar fixed="relative" id="navbar" bg="light" expand="lg" variant="light">
         <Container>
-          <Navbar.Brand href="#home">PefFinder</Navbar.Brand>
+          {/* <Navbar.Brand href="#home">PefFinder </Navbar.Brand> */}
+          <Navbar.Brand href="#home">  </Navbar.Brand> 
+          <img src="../images/Pet-Finder.png"
+                    alt="Pet Finder logo"
+                    width="125"
+                    height="75"
+                  />
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
