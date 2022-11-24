@@ -17,8 +17,8 @@ export default class EmpleadosEditar extends React.Component {
         show: false,
       },
       confirmation:{
-        title:"Modificar empleado",
-        text:"¿Desea modificar el empleado?",
+        title:"Modificar datos de Mascota",
+        text:"¿Desea modificar los datos de la mascota?",
         show: false,
       },
       loading: false,
@@ -116,7 +116,7 @@ export default class EmpleadosEditar extends React.Component {
         />
         <Loading show={this.state.loading} />
         <Row>
-          <h1>Editar empleados</h1>
+          <h1>Editar Datos de Mascota</h1>
         </Row>
         <Row>
           <Form>
@@ -128,35 +128,35 @@ export default class EmpleadosEditar extends React.Component {
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasic">
-              <Form.Label>Primer Apellido</Form.Label>
+              <Form.Label>raza</Form.Label>
               <Form.Control
               value = {this.state.empleado.apellido_p}
                 onChange={(e) => this.setValue("apellido_p", e.target.value)}
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasic">
-              <Form.Label>Segundo Apellido</Form.Label>
+              <Form.Label>Sexo</Form.Label>
               <Form.Control
               value = {this.state.empleado.apellido_m}
                 onChange={(e) => this.setValue("apellido_m", e.target.value)}
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasic">
-              <Form.Label>Teléfono</Form.Label>
+              <Form.Label>Edad</Form.Label>
               <Form.Control
               value = {this.state.empleado.telefono}
                 onChange={(e) => this.setValue("telefono", e.target.value)}
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Correo electrónico</Form.Label>
+              <Form.Label>Fecha de perdida</Form.Label>
               <Form.Control
               value = {this.state.empleado.mail}
                 onChange={(e) => this.setValue("mail", e.target.value)}
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasic">
-              <Form.Label>Dirección</Form.Label>
+              <Form.Label>Descripcion</Form.Label>
               <Form.Control
               value = {this.state.empleado.direccion}
                 onChange={(e) => this.setValue("direccion", e.target.value)}
@@ -170,7 +170,7 @@ export default class EmpleadosEditar extends React.Component {
                 })
                }
             >
-              Guardar empleado
+              Guardar datos de Mascota
             </Button>
           </Form>
         </Row>

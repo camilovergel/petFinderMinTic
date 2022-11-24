@@ -18,13 +18,13 @@ exports.create = function(req,res) {
         if(err){
             console.error(err),
             response.exito = false,
-            response.msg = "Error al guardar el empleado"
+            response.msg = "Error al guardar la mascota"
             res.json(response)
             return;
         }
 
         response.exito = true,
-        response.msg = "El empleado se guardó correctamente"
+        response.msg = " La mascota se guardó correctamente"
         res.json(response)
     })
 }
@@ -55,13 +55,13 @@ exports.update = function(req,res){
         if(err){
             console.error(err), 
             response.exito = false,
-            response.msg = "Error al modificar el empleado"
+            response.msg = "Error al modificar la mascota"
             res.json(response)
             return;
         }
 
         response.exito = true,
-        response.msg = "El empleado modifico correctamente"
+        response.msg = "La mascota se modifico correctamente"
         res.json(response)
     })
 }
@@ -71,13 +71,13 @@ exports.remove = function(req,res){
         if(err){
             console.error(err), 
             response.exito = false,
-            response.msg = "Error al eliminar el empleado"
+            response.msg = "Error al eliminar la mascota"
             res.json(response)
             return;
         }
 
         response.exito = true,
-        response.msg = "El empleado eliminado correctamente"
+        response.msg = "La mascota fue eliminada correctamente"
         res.json(response)
     })
 }

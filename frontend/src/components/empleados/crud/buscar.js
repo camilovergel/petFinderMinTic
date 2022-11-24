@@ -20,23 +20,23 @@ const columns = [
   },
   {
     dataField: "apellido_p",
-    text: "Primer Apellido",
+    text: "Raza",
   },
   {
     dataField: "apellido_m",
-    text: "Segundo Apellido",
+    text: "Sexo",
   },
   {
     dataField: "telefono",
-    text: " Telefono",
+    text: " Edad ",
   },
   {
     dataField: "mail",
-    text: "Correo Electronico",
+    text: "Fecha de perdida",
   },
   {
     dataField: "direccion",
-    text: " Direccion",
+    text: " Descripcion ",
   },
 ];
 
@@ -51,8 +51,8 @@ export default class EmpleadosBuscar extends React.Component {
         show: false,
       },
       confirmation: {
-        title:"Eliminar empleado",
-        text: "¿Desea eliminar el empleado?",
+        title:"Eliminar Mascota",
+        text: "¿Desea eliminar la Mascota?",
         show: false,
       }
     };
@@ -139,7 +139,7 @@ export default class EmpleadosBuscar extends React.Component {
           />
         <Loading show={this.state.loading} />
         <Row>
-          <h1>Buscar Empleados</h1>
+          <h1>Buscar Mascota</h1>
         </Row>
         <Row>
           <DataGrid 

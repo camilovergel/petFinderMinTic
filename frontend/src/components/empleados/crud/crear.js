@@ -69,7 +69,7 @@ export default class EmpleadosCrear extends React.Component {
         />
         <Loading show={this.state.loading} />
         <Row>
-          <h1>Crear empleados</h1>
+          <h1>Reportar Mascota</h1>
         </Row>
         <Row>
           <Form>
@@ -80,31 +80,31 @@ export default class EmpleadosCrear extends React.Component {
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasic">
-              <Form.Label>Primer Apellido</Form.Label>
+              <Form.Label>Raza</Form.Label>
               <Form.Control
                 onChange={(e) => this.setValue("apellido_p", e.target.value)}
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasic">
-              <Form.Label>Segundo Apellido</Form.Label>
+              <Form.Label>Sexo</Form.Label>
               <Form.Control
                 onChange={(e) => this.setValue("apellido_m", e.target.value)}
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasic">
-              <Form.Label>Teléfono</Form.Label>
+              <Form.Label>Edad</Form.Label>
               <Form.Control
                 onChange={(e) => this.setValue("telefono", e.target.value)}
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Correo electrónico</Form.Label>
+              <Form.Label>Fecha de Perdida</Form.Label>
               <Form.Control
                 onChange={(e) => this.setValue("mail", e.target.value)}
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasic">
-              <Form.Label>Dirección</Form.Label>
+              <Form.Label>Descripcion</Form.Label>
               <Form.Control
                 onChange={(e) => this.setValue("direccion", e.target.value)}
               />
@@ -113,7 +113,7 @@ export default class EmpleadosCrear extends React.Component {
               variant="primary"
               onClick={() => console.log(this.guardarEmpleados())}
             >
-              Guardar empleado
+              Guardar Mascota
             </Button>
           </Form>
         </Row>

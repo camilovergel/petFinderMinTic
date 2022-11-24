@@ -13,7 +13,7 @@ export default class Menu extends React.Component {
     return (
       <Navbar fixed="top" id="navbar" bg="primary" expand="lg" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Novios.com</Navbar.Brand>
+          <Navbar.Brand href="#home">PefFinder</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
