@@ -61,11 +61,13 @@ export default class EmpleadosBuscar extends React.Component {
     this.onCancel = this.onCancel.bind(this);
     this.onConfirm = this.onConfirm.bind(this);
   }
-  componentDidMount() {}
+  componentDidMount() { }
+
   onClickEditButton(row) {
     this.props.setIdEmpleado(row._id);
     this.props.changeTab("editar");
   }
+
   onClickDeleteButton(row){
     this.setState({
       idEmpleado: row._id,
